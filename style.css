@@ -1,0 +1,93 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.main {
+    max-width: 100vw;
+    height: 100rem;
+    background: #1f4037;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #99f2c8, #1f4037);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc {
+    width: 35rem;
+    height: 55rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.output {
+    height: 10rem;
+    background-color: #edf2ff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.input {
+    font-size: 4rem;
+    margin-right: 1rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-2-1 {
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.grid-1-2 {
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+.grid-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.btn {
+    height: 10rem;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-small {
+    background-color: #bac8ff;
+}
+
+.btn-small:hover {
+    background-color: #91a7ff;
+}
+
+.btn-big {
+    background-color: #748ffc;
+}
+
+.btn-big:hover {
+    background-color: #5c7cfa;
+}
+
+@media (max-width=800px) {
+    html {
+        font-size: 50%;
+    }
+}
